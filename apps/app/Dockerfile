@@ -9,7 +9,7 @@ WORKDIR /app
 RUN npm ci
 
 WORKDIR /app/apps/app
-RUN PUBLIC_URL=http://127.0.0.1:3001 npm run build
+RUN PUBLIC_URL=http://image.local npm run build
 
 FROM nginx:1.13
 
